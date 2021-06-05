@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>eCommerce Quiz</title>
+  </head>
+  <body>
+    <div class="container active">
+      <h1>eCommerce Quiz</h1>
+      <h3 id="qn-count">Question 1 of 3:</h3>
+      <div id="1" class="quiz active">
+        <p>Which of the following is not a real eCommerce platform?</p>
+        <div class="options">
+          <label for="Shopify"
+            ><input
+              type="radio"
+              id="Shopify"
+              name="option1"
+              value="Shopify"
+            />Shopify</label
+          >
+
+          <label for="WooCommerce"
+            ><input
+              type="radio"
+              id="WooCommerce"
+              name="option1"
+              value="WooCommerce"
+            />WooCommerce</label
+          >
+
+          <label for="ShopCommerce"
+            ><input
+              type="radio"
+              id="ShopCommerce"
+              name="option1"
+              value="ShopCommerce"
+            />ShopCommerce
+          </label>
+
+          <label for="BigCommerce"
+            ><input
+              type="radio"
+              id="BigCommerce"
+              name="option1"
+              value="BigCommerce"
+            />BigCommerce
+          </label>
+        </div>
+      </div>
+
+      <div id="2" class="quiz">
+        <p>If Shopify is so good, why are Shopify developers necessary?</p>
+        <div class="options">
+          <label for="save-time"
+            ><input
+              type="radio"
+              id="save-time"
+              name="option2"
+              value="save-time"
+            />To save time on things like store setups and migrations</label
+          >
+
+          <label for="extend-func"
+            ><input
+              type="radio"
+              id="extend-func"
+              name="option2"
+              value="extend-func"
+            />To extend the limited design options and functionalities of themes
+            with custom code</label
+          >
+
+          <label for="provide-support"
+            ><input
+              type="radio"
+              id="provide-support"
+              name="option2"
+              value="provide-support"
+            />To provide support with a deep understanding of how the platform
+            works and what its limitations are
+          </label>
+
+          <label for="all2"
+            ><input type="radio" id="all2" name="option2" value="all" />All the
+            above</label
+          >
+        </div>
+      </div>
+
+      <div id="3" class="quiz">
+        <p>Which of the following is true about Shopify developers?</p>
+        <div class="options">
+          <label for="paid-well"
+            ><input
+              type="radio"
+              id="paid-well"
+              name="option3"
+              value="paid-well"
+            />They are paid extremely well</label
+          >
+
+          <label for="high-demand"
+            ><input
+              type="radio"
+              id="high-demand"
+              name="option3"
+              value="high-demand"
+            />There is a high demand for them</label
+          >
+
+          <label for="know-all"
+            ><input
+              type="radio"
+              id="know-all"
+              name="option3"
+              value="know-all"
+            />They need to know web development, the platform itself, and the
+            liquid template language
+          </label>
+
+          <label for="all3"
+            ><input type="radio" id="all3" name="option3" value="all" />All the
+            above
+          </label>
+        </div>
+      </div>
+
+      <button id="previous">< Previous</button>
+      <button id="next" class="visible">Next ></button>
+      <button id="finish">Finish</button>
+    </div>
+
+    <div id="notification">Please choose an option!</div>
+
+    <div class="result-container">
+      <div id="result"></div>
+      <button id="reset">Start over</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
